@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Geonames App</title>
+    <meta name="author" content="Kizito">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="libs/vendors/bootsrap/bootstrap.min.css" rel="stylesheet">
+    <link href="libs/css/style.css" rel="stylesheet">
+    <link href="libs/css/preloader.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        
+    </div>
+
+    <div class="main">
+
+    </div>
+
+    <div id="preloader">
+
+    </div>
+
+
+
+
+    <script src="libs/vendors/jquery/jquery-2.2.3.min.js"></script>
+    <script src="libs/vendors/bootsrap/bootstrap.min.js"></script>
+    <script src="libs/js/script.js"></script>
+
+    <script>
+        $(window).on('load', function(){
+            if ($('#preloader').length){
+                $('#preloader').delay(100).fadeOut('slow', function(){
+                    $(this).remove(); 
+                });    
+            }
+        });
+    </script>
+</body>
+</html>
