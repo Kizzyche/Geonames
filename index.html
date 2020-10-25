@@ -13,11 +13,50 @@
 <body>
 
     <div class="header">
-        
+        <h1>Get Information on locations all around the world</h1>
     </div>
 
     <div class="main">
-
+        <table border="solid">
+            <tr>
+                <th>Api</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    Timezone <br>
+                    Latitude:<input type="number" id="Lat"><br>
+                    Longitude:<input type="number" id="long">
+                </td>
+                <td>Displays information for a given latitude and longitude such as country name, country code and local time etc.</td>
+                <td><button id="btn1">Submit</button></td>
+            </tr>
+            <tr>
+                <td>
+                    Nearest Address <br>
+                    Latitude:<input type="number" id="Lat"><br>
+                    Longitude:<input type="number" id="long">
+                </td>
+                <td>Displays the information for the nearest address to a given latitude and longitude.</td>
+                <td><button id="btn2">Submit</button></td>
+            </tr>
+            <tr>
+                <td>
+                    Places <br>
+                    North: <input type="number" id="north"><br>
+                    South: <input type="number" id="south"><br>
+                    East: <input type="number" id="east"><br>
+                    West: <input type="number" id="west">
+                </td>
+                <td>Displays cities and place names bounded by the box</td>
+                <td><button id="btn3">Submit</button></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+        
     </div>
 
     <div id="preloader">
