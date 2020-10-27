@@ -1,0 +1,68 @@
+
+body{
+    background-color: ivory;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1em;
+}
+
+h1{
+    background-color: bisque;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em 0;
+    opacity: 0.7;
+    margin: 0;
+}
+table{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    
+}
+th{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0.4em 0;
+    font-size: 1.2em;
+}
+
+td{
+    height: 11em;
+    padding: 1em 0;
+}
+
+.title{
+    margin-left: 1.5em;
+    font-style: italic;
+    line-height: 2em;
+}
+.lbl{
+    width: 55%;
+    padding-left: 3em;
+}
+
+input{
+    width: 30%;
+    outline: none;
+}
+
+.descript{
+    text-align: justify;
+    margin-left: 3em;
+    
+}
+
+button{
+    margin: 0 2.5em;
+}
+
+#res-container{
+    background-color:bisque;
+    font-weight: 800;
+    padding: 2em;
+}
+
+#res-container p{
+    font-size: 0.8em;
+}

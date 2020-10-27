@@ -7,8 +7,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="libs/vendors/bootsrap/bootstrap.min.css" rel="stylesheet">
-    <link href="libs/css/style.css" rel="stylesheet">
     <link href="libs/css/preloader.css" rel="stylesheet">
+    <link href="libs/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&family=Dosis&family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
     </div>
 
     <div class="main">
-        <table border="solid">
+        <table >
             <tr>
                 <th>Api</th>
                 <th>Description</th>
@@ -25,35 +26,37 @@
             </tr>
             <tr>
                 <td>
-                    Timezone <br>
-                    Latitude:<input type="number" id="Lat"><br>
-                    Longitude:<input type="number" id="long">
+                    <label class="title">Timezone</label><br>
+                    <label for="lat" class="lbl">Latitude:</label><input type="number" id="lat"><br>
+                    <label for="lng" class="lbl">Longitude:</label><input type="number" id="lng">
                 </td>
-                <td>Displays information for a given latitude and longitude such as country name, country code and local time etc.</td>
-                <td><button id="btn1">Submit</button></td>
+                <td><p class="descript">Displays information for a given latitude and longitude such as country name, country code and local time etc.</p></td>
+                <td><button class="btn btn-primary" id="btn1">Submit</button></td>
             </tr>
             <tr>
                 <td>
-                    Nearest Address <br>
-                    Latitude:<input type="number" id="Lat"><br>
-                    Longitude:<input type="number" id="long">
+                    <label class="title">Nearest Address</label><br>
+                    <label for="lat1" class="lbl">Latitude:</label><input type="number" id="lat1"><br>
+                    <label for="lng1" class="lbl">Longitude:</label><input type="number" id="lng1">
                 </td>
-                <td>Displays the information for the nearest address to a given latitude and longitude.</td>
-                <td><button id="btn2">Submit</button></td>
+                <td><p class="descript">Displays the information for the nearest address to a given latitude and longitude.</p></td>
+                <td><button class="btn btn-primary" id="btn2">Submit</button></td>
             </tr>
             <tr>
                 <td>
-                    Places <br>
-                    North: <input type="number" id="north"><br>
-                    South: <input type="number" id="south"><br>
-                    East: <input type="number" id="east"><br>
-                    West: <input type="number" id="west">
+                    <label class="title">Places</label><br>
+                    <label for="north" class="lbl">North:</label><input type="number" id="north"><br>
+                    <label for="south" class="lbl">South:</label><input type="number" id="south"><br>
+                    <label for="east" class="lbl">East:</label><input type="number" id="east"><br>
+                    <label for="west" class="lbl">West:</label><input type="number" id="west">
                 </td>
-                <td>Displays cities and place names bounded by the box</td>
-                <td><button id="btn3">Submit</button></td>
+                <td><p class="descript">Displays cities and place names bounded by the box</p></td>
+                <td><button class="btn btn-primary" id="btn3">Submit</button></td>
             </tr>
             <tr>
-                <td colspan="3"></td>
+                <td colspan="3" id="res-container">
+                    <h3 id="res">Search Result:</h3>
+                </td>
             </tr>
         </table>
         
